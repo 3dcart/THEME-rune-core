@@ -1359,4 +1359,12 @@ iframe {
     .promos .row > div {
         margin-top: 15px;
     }
+.mailinglist-submit{
+width:auto;
+}
+}
+@media(min-width: 768px) {
+    .revealOnScroll {
+        opacity:0;
+    }
 }
