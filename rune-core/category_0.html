@@ -155,17 +155,17 @@
     		<h3>[product_browsing-history-header]</h3>
     	</div>
     	<div class="product-carousel flexslider">
-    		<!--START: browsing_history_items-->
-    		<!--START: CATEGORY_ITEMS--> 
+			<!--START: browsing_history_items-->
     		<ul class="product-items product-items-[product-cols-number] slides">
-    			<!--START: ITEM_TEMPLATE--> 
+    			<!--START: browsing_history_item-->
     			<li class="product-item" data-catalogid="[catalogid]" data-ajaxcart="1" data-addcart-callback="addcart_callback">
     				<div class="img">
     					<a href="product.asp?itemid=[catalogid]">
     						<img src="[THUMBNAIL]" alt="[name]" class="img-responsive" />
     					</a>
     					<!--START: quickview-->
-    					<button class="quickview" data-toggle="modal">Quick View</button>
+                        <button class="quickview" data-toggle="modal">Quick View</button>
+    					<!--<button class="quickview" data-toggle="modal">Quick View</button>-->
     					<!--END: quickview-->
     				</div>
     				<div class="name">
@@ -183,15 +183,6 @@
     					<!--END: SALEPRICE-->
     				</div>
 
-    				<div class="status">
-    					<!--START: product_availability-->
-    					<span class="availability">[availability]</span>
-    					<!--END: product_availability-->
-    					<!--START: freeshippingblock-->
-    					<span class="freeshipping">[freeshipping]</span>
-    					<!--END: freeshippingblock-->
-    				</div>
-
     				<div class="reviews">
     					<!--START: product_review-->
     					<!--START: product_review_average-->
@@ -200,6 +191,7 @@
     					<!--END: product_review-->
     				</div>
 
+					<!--START: addtocart-->
     				<div class="action">
     					<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]" class="add-to-cart btn btn-default">
     						<span class="buyitlink-text">[category_buyitlink]</span>
@@ -207,11 +199,11 @@
     						<span class="ajaxcart-added icon-ok"></span>
     					</a>
     				</div>
+					<!--END: addtocart-->
     			</li>
-    			<!--END: ITEM_TEMPLATE--> 
+    			<!--END: browsing_history_item-->
     		</ul>
-    		<!--END: CATEGORY_ITEMS-->
-    		<!--END: browsing_history_items-->
+			<!--END: browsing_history_items-->
     	</div>
     </div>
 </section>

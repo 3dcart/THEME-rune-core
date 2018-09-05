@@ -1,0 +1,725 @@
+{
+  "theme_name": "Rune Core",
+  "selected_preset": 0,
+  "field_groups": [
+    { "name": "Header & Navigation" },
+    { "name": "Text & Buttons" },
+    { "name": "Typography" },
+    { "name": "Products" },
+    { "name": "Footer" }
+  ],
+  "theme_presets": [
+    {
+      "isCustom": 0,
+      "name": "Default",
+      "fields": [
+        {
+          "label": "Navigation text color",
+          "name": "nav_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 0
+        },
+        {
+          "label": "Navigation text hover color",
+          "name": "nav_text_hover_color",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "14",
+          "options": [
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Heading base size",
+          "name": "heading_base_size",
+          "type": 3,
+          "value": "30",
+          "options": [
+            {
+              "text": "24px",
+              "value": 24
+            },
+            {
+              "text": "25px",
+              "value": 25
+            },
+            {
+              "text": "26px",
+              "value": 26
+            },
+            {
+              "text": "27px",
+              "value": 27
+            },
+            {
+              "text": "28px",
+              "value": 28
+            },
+            {
+              "text": "29px",
+              "value": 29
+            },
+            {
+              "text": "30px",
+              "value": 30
+            },
+            {
+              "text": "31px",
+              "value": 31
+            },
+            {
+              "text": "32px",
+              "value": 32
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 3
+        },
+        {
+          "label": "Free shipping text",
+          "name": "free_shipping_text",
+          "type": 2,
+          "value": "00a888",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "00d7a7",
+          "group": 3
+        },
+        {
+          "label": "Footer text color",
+          "name": "footer_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 4
+        }
+      ]
+    },
+    {
+      "isCustom": 0,
+      "name": "Logo-me",
+      "fields": [
+        {
+          "label": "Navigation text color",
+          "name": "nav_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 0
+        },
+        {
+          "label": "Navigation text hover color",
+          "name": "nav_text_hover_color",
+          "type": 2,
+          "value": "167F39",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "167F39",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "222222",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "167F39",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "167F39",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "167F39",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "167F39",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFFFF",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "14",
+          "options": [
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Heading base size",
+          "name": "heading_base_size",
+          "type": 3,
+          "value": "30",
+          "options": [
+            {
+              "text": "24px",
+              "value": 24
+            },
+            {
+              "text": "25px",
+              "value": 25
+            },
+            {
+              "text": "26px",
+              "value": 26
+            },
+            {
+              "text": "27px",
+              "value": 27
+            },
+            {
+              "text": "28px",
+              "value": 28
+            },
+            {
+              "text": "29px",
+              "value": 29
+            },
+            {
+              "text": "30px",
+              "value": 30
+            },
+            {
+              "text": "31px",
+              "value": 31
+            },
+            {
+              "text": "32px",
+              "value": 32
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "167F39",
+          "group": 3
+        },
+        {
+          "label": "Free shipping text",
+          "name": "free_shipping_text",
+          "type": 2,
+          "value": "00a888",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "167F39",
+          "group": 3
+        },
+        {
+          "label": "Footer text color",
+          "name": "footer_text_color",
+          "type": 2,
+          "value": "FCFFF5",
+          "group": 4
+        }
+      ]
+    },
+    {
+      "isCustom": 0,
+      "name": "Wordle",
+      "fields": [
+        {
+          "label": "Navigation text color",
+          "name": "nav_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 0
+        },
+        {
+          "label": "Navigation text hover color",
+          "name": "nav_text_hover_color",
+          "type": 2,
+          "value": "383A5B",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "383A5B",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "0D0D0D",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "383A5B",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "383A5B",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "F1F1F1",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "F1F1F1",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "383A5B",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "383A5B",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "14",
+          "options": [
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Heading base size",
+          "name": "heading_base_size",
+          "type": 3,
+          "value": "30",
+          "options": [
+            {
+              "text": "24px",
+              "value": 24
+            },
+            {
+              "text": "25px",
+              "value": 25
+            },
+            {
+              "text": "26px",
+              "value": 26
+            },
+            {
+              "text": "27px",
+              "value": 27
+            },
+            {
+              "text": "28px",
+              "value": 28
+            },
+            {
+              "text": "29px",
+              "value": 29
+            },
+            {
+              "text": "30px",
+              "value": 30
+            },
+            {
+              "text": "31px",
+              "value": 31
+            },
+            {
+              "text": "32px",
+              "value": 32
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "383A5B",
+          "group": 3
+        },
+        {
+          "label": "Free shipping text",
+          "name": "free_shipping_text",
+          "type": 2,
+          "value": "00a888",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "383A5B",
+          "group": 3
+        },
+        {
+          "label": "Footer text color",
+          "name": "footer_text_color",
+          "type": 2,
+          "value": "000000",
+          "group": 4
+        }
+      ]
+    },
+    {
+      "isCustom": 1,
+      "name": "Custom",
+      "fields": [
+        {
+          "label": "Navigation text color",
+          "name": "nav_text_color",
+          "type": 2,
+          "value": "FF0000",
+          "group": 0
+        },
+        {
+          "label": "Navigation text hover color",
+          "name": "nav_text_hover_color",
+          "type": 2,
+          "value": "0000FF",
+          "group": 0
+        },
+        {
+          "label": "Headings color",
+          "name": "headings_color",
+          "type": 2,
+          "value": "FF00FF",
+          "group": 1
+        },
+        {
+          "label": "Body text color",
+          "name": "body_text_color",
+          "type": 2,
+          "value": "00FF00",
+          "group": 1
+        },
+        {
+          "label": "Primary button color",
+          "name": "btn_color",
+          "type": 2,
+          "value": "FF0000",
+          "group": 1
+        },
+        {
+          "label": "Primary button border",
+          "name": "btn_border",
+          "type": 2,
+          "value": "00FF00",
+          "group": 1
+        },
+        {
+          "label": "Primary button text color",
+          "name": "btn_text_color",
+          "type": 2,
+          "value": "FFFF00",
+          "group": 1
+        },
+        {
+          "label": "Secondary button color",
+          "name": "btn2_color",
+          "type": 2,
+          "value": "0000FF",
+          "group": 1
+        },
+        {
+          "label": "Secondary button border",
+          "name": "btn2_border",
+          "type": 2,
+          "value": "FF0000",
+          "group": 1
+        },
+        {
+          "label": "Secondary button text color",
+          "name": "btn2_text_color",
+          "type": 2,
+          "value": "FFFF00",
+          "group": 1
+        },
+        {
+          "label": "Base font size",
+          "name": "base_font_size",
+          "type": 3,
+          "value": "14",
+          "options": [
+            {
+              "text": "14px",
+              "value": 14
+            },
+            {
+              "text": "15px",
+              "value": 15
+            },
+            {
+              "text": "16px",
+              "value": 16
+            },
+            {
+              "text": "17px",
+              "value": 17
+            },
+            {
+              "text": "18px",
+              "value": 18
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Heading base size",
+          "name": "heading_base_size",
+          "type": 3,
+          "value": "24",
+          "options": [
+            {
+              "text": "24px",
+              "value": 24
+            },
+            {
+              "text": "25px",
+              "value": 25
+            },
+            {
+              "text": "26px",
+              "value": 26
+            },
+            {
+              "text": "27px",
+              "value": 27
+            },
+            {
+              "text": "28px",
+              "value": 28
+            },
+            {
+              "text": "29px",
+              "value": 29
+            },
+            {
+              "text": "30px",
+              "value": 30
+            },
+            {
+              "text": "31px",
+              "value": 31
+            },
+            {
+              "text": "32px",
+              "value": 32
+            }
+          ],
+          "group": 2
+        },
+        {
+          "label": "Sale text",
+          "name": "sale_text",
+          "type": 2,
+          "value": "FF00FF",
+          "group": 3
+        },
+        {
+          "label": "Free shipping text",
+          "name": "free_shipping_text",
+          "type": 2,
+          "value": "FF0000",
+          "group": 3
+        },
+        {
+          "label": "Rating Stars color",
+          "name": "stars_color",
+          "type": 2,
+          "value": "0000FF",
+          "group": 3
+        },
+        {
+          "label": "Footer text color",
+          "name": "footer_text_color",
+          "type": 2,
+          "value": "ff0000",
+          "group": 4
+        }
+      ]
+    }
+  ]
+}
