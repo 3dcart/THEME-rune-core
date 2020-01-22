@@ -779,6 +779,9 @@ span.freeshipping {
     .footer-social {
         text-align: center;
     }
+	.modal-backdrop{
+		z-index:-1;
+	}
 }
 @media(max-width: 767px) {
     .logo {
