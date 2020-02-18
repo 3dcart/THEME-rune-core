@@ -972,7 +972,7 @@ span.freeshipping {
     position: fixed;
     top: 50%;
     right: 0;
-    z-index: 999;
+    z-index: 9999;
     background-color: #ff7800;
     color: #fff;
     border-radius: 20px 0 0 20px;
