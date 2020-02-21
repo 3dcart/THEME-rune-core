@@ -28,7 +28,16 @@ img {
     font-weight: 600;
     letter-spacing: 0;
 }
-
+div.searchlight-balloon {
+   top:65px !important;
+	width: 100%;
+}
+table.searchlight-results {
+    width: 100% !important;
+}
+div.searchlight-results-wrapper {
+    margin: 0 15px !important;
+}
 .subcategories {
     border-bottom: 1px solid #ececec;
     padding: 0 0 30px;
