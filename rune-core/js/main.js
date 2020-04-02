@@ -92,6 +92,11 @@ function moveMenu() {
     }
 }
 
+function setLeftWidth() {
+	var new_width = $('.leftNavFixed').outerWidth();
+	$('#navbar-fixed-side').width(new_width); 
+}
+
 jQuery(document).ready(function () {
 
     update_flyoutcart();
@@ -132,13 +137,21 @@ jQuery(document).ready(function () {
 });
 
 jQuery(window).load(function () {
+	"use strict";
+	
     moveMenu();
+	setLeftWidth();
 });
 jQuery(window).resize(function () {
+	"use strict";
+	
     moveMenu();
+	setLeftWidth();
 });
 
 jQuery(function ($) {
+	"use strict";
+	
 	$('.navbar .dropdown').hover(function () {
 		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
 
