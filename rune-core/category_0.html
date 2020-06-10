@@ -44,93 +44,274 @@
 
 
 				<!--START: ITEMS-->
-				<section class="category-products">
-					<h2 class="titles">[category_Header-products] [[productnumber]]</h2>
-					<div class="category-actions clearfix">
-						<form action="view_category.asp?cat=[catid]" method="post" name="frmsortby" id="frmsortby">
-							<!--START: sortbylist-->
-							<div class="sort-by">
-								<span>Sort by:</span>
-								<select id="sortby" name="sortby">
-									<option value="0">Use Default Sorting</option>
-									[sortbylist]
-								</select>
+				<section class="category-products clearfix">
+					<form action="view_category.asp?cat=[catid]" method="post" name="frmsortby" id="frmsortby">
+						<div class="row category-toolbar">
+							<div class="col-sm-6 clearfix">
+								<!--START: category_view_switch-->
+								<div class="view-as-btn">
+									<a href="javascript:void(0);" id="grid-view" title="Grid View" class="current-view">
+										<div>
+											<div class="icon-bar"></div>
+											<div class="icon-bar"></div>
+											<div class="icon-bar"></div>
+										</div>
+									</a>
+									<a href="javascript:void(0);" id="list-view" title="List View" class="">
+										<div>
+											<div class="icon-bar"></div>
+											<div class="icon-bar"></div>
+											<div class="icon-bar"></div>
+										</div>
+									</a>
+								</div>
+								<!--END: category_view_switch-->
+								<h2 class="titles">[category_Header-products] [[productnumber]]</h2>
 							</div>
-							<!--END: sortbylist-->
-						</form>
+							<div class="col-sm-6">
+								<!--START: sortbylist-->
+								<div class="sort-by">
+									<span>[category_sort-by-label]:</span>
+									<select id="sortby" name="sortby">
+										<option value="0">[category_sort-by-default]</option>
+										[sortbylist]
+									</select>
+								</div>
+								<!--END: sortbylist-->
+							</div>
+						</div>
 
-						<!--START: catitemslist-->
-						<!--<div class="catitemslist">
-							<span>[category_Header-items-per-page-title]</span>
-							<select name="catitems" onchange="frmsortby.submit();">
-								[catitemslist]
-							</select>
-						</div>-->
-						<!--END: catitemslist-->
+						<div class="category-actions clearfix">
 
-						<div class="paging"> 
-						<!--START: PAGING--> 
-						<!--START: PREV--> 
-						<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[prev]">[category_previouspage]</a> 
-						<!--END: PREV--> 
-						<!--START: PAGES--> 
-						<!--START: FIRST_PAGE--> 
-						<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a><span class="paging-dots">...</span> 
-						<!--END: FIRST_PAGE--> 
-						<!--START: PAGES_SELECTED--> 
-						<strong>PAGE</strong> 
-						<!--END: PAGES_SELECTED--> 
-						<!--START: PAGES_NOTSELECTED--> 
-						<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
-						<!--END: PAGES_NOTSELECTED--> 
-						<!--START: LAST_PAGE--> 
-						<span class="paging-dots">...</span><a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
-						<!--END: LAST_PAGE--> 
-						<!--END: PAGES--> 
-						<!--START: NEXT--> 
-						<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[next]">[category_nextpage]</a> <a href="view_category.asp?viewall=1&cat=[catid]" class="category-viewall">View All</a> 
-						<!--END: NEXT--> 
-						<!--END: PAGING--> 
-						<!--START: UNDOVIEWALL--> 
-						<a class="paging-links" href="view_category.asp?viewall=0&cat=[catid]">Exit View All</a> 
-						<!--END: UNDOVIEWALL--></div>
-					</div>
+							<div class="paging"> 
+							<!--START: PAGING--> 
+							<!--START: PREV--> 
+							<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[prev]">[category_previouspage]</a> 
+							<!--END: PREV--> 
+							<!--START: PAGES--> 
+							<!--START: FIRST_PAGE--> 
+							<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a><span class="paging-dots">...</span> 
+							<!--END: FIRST_PAGE--> 
+							<!--START: PAGES_SELECTED--> 
+							<strong>PAGE</strong> 
+							<!--END: PAGES_SELECTED--> 
+							<!--START: PAGES_NOTSELECTED--> 
+							<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
+							<!--END: PAGES_NOTSELECTED--> 
+							<!--START: LAST_PAGE--> 
+							<span class="paging-dots">...</span><a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
+							<!--END: LAST_PAGE--> 
+							<!--END: PAGES--> 
+							<!--START: NEXT--> 
+							<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[next]">[category_nextpage]</a> <a href="view_category.asp?viewall=1&cat=[catid]" class="category-viewall">View All</a> 
+							<!--END: NEXT--> 
+							<!--END: PAGING--> 
+							<!--START: UNDOVIEWALL--> 
+							<a class="paging-links" href="view_category.asp?viewall=0&cat=[catid]">Exit View All</a> 
+							<!--END: UNDOVIEWALL--></div>
+						</div>
+                        
+						<!--START: catFilterMainBlock-->
+						<div id="filtersBlock" class="catFilters">
+							<!--START: catFilter-->
+							<div class="selected-filters">
+								<div class="filters-label">[category_Header-Filters]</div>
+								<div class="filters-container">
+									<ul class="list-unstyled list-inline">
+										<!--START: catFilterCrumb-->
+										<!--START: catFilterCrumbItem-->
+										<li><a href="#" onclick="javascript:setCatFilter('[strFilter]', document.frmsortby, true);">[strfiltername]</a></li>
+										<!--END: catFilterCrumbItem-->
+										<!--END: catFilterCrumb-->
+									</ul>
+									<!--START: catFilterRemoveLink-->
+									<div class="remove-filter">
+										<a href="#" onclick="javascript:removeCatFilter();">
+											<span class="icon-cancel"></span> [category_Header-RemoveFilters]	
+										</a>
+									</div>
+									<!--END: catFilterRemoveLink-->
+									<div class="clear"></div>
+								</div>
+							</div>
+							<!--END: catFilter-->
+
+							<div class="form-group">
+								<!--START: catFilter_Filter-->
+								<label class="cat-filters">
+									<label>[catFilterName]</label>
+									<select class="form-control" name="catFilter" onchange="setCatFilter(this.value, document.frmsortby, false);">
+										<option value=""></option>
+										<!--START: catFilter_Filter_Item-->
+										<option value="[catFilterId]-*-[catFilterName]-*-[catFilterChildId]-*-[catFilterChildName]-*-[catid]-*-">[catFilterChildName] ([numItems])</option>
+										<!--END: catFilter_Filter_Item-->
+									</select>
+								</label>
+								<!--END: catFilter_Filter-->
+							</div>
+							
+							<input type="hidden" name="hdnCatFilter" id="hdnCatFilter" value="[catFilter]" />
+							<div class="clear"></div>
+						</div>
+						<!--END: catFilterMainBlock-->
+
+                        <!--START: catFilterMainBlock_enhanced-->
+                        <div id="filtersEnhancedBlock">
+                            <!--START: catFilter_enhanced-->
+                            <div class="selected-filters-enhanced">
+                                <h5>[category_Header-Filters]</h5>
+                                <div class="container">
+                                    <ul>
+                                        <!--START: catFilterCrumb_enhanced-->
+                                        <!--START: catFilterCrumbItem_enhanced-->
+                                        <input type="hidden" name="hdnFilterCrumb-[id]" id="hdnFilterCrumb-[id]" value="[strFilter]" />
+                                        <li><a href="#" onclick="javascript: setCatFilterEnhanced([id]);">[strfiltername]</a> <a class="crumb-item-remove-enhanced" href="#" onclick="javascript:removeCatFilterEnhanced([id]);">x</a></li>
+                                        <!--END: catFilterCrumbItem_enhanced-->
+                                        <!--END: catFilterCrumb_enhanced-->
+                                    </ul>
+                                    <!--START: catFilterRemoveLink_enhanced-->
+                                    <div class="remove-filter-enhanced"><a href="#" onclick="javascript:window.location.href = window.location.href.split('?')[0];">[category_Header-RemoveFilters]</a></div>
+                                    <!--END: catFilterRemoveLink_enhanced-->
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <!--END: catFilter_enhanced-->
+                            <!--START: catFilter_Filter_enhanced-->
+                            <div class="cat-filters-enhanced">
+                                <div>
+                                    <h5>[catFilterName]</h5>
+                                    <ul>
+                                        <!--START: catFilter_Filter_Item_enhanced-->
+                                        <li><a href="[catFilterLink]" [catFilterLinkRel]>[catFilterChildName] ([numItems])</a></li>
+                                        <!--END: catFilter_Filter_Item_enhanced-->
+                                    </ul>                   
+                                </div>
+                            </div>
+                            <!--END: catFilter_Filter_enhanced-->
+                            <input type="hidden" name="hdnCatFilterEnhancedEnabled" id="hdnCatFilterEnhancedEnabled" value="[hdnCatFilterEnhancedEnabled]" />
+                            <input type="hidden" name="hdnCatId" id="hdnCatId" value="[hdnCatId]" />
+                            <input type="hidden" name="hdnPageNumber" id="hdnPageNumber" value="[hdnPageNumber]" />            
+                            <input type="hidden" name="hdnQueryString" id="hdnQueryString" value="[hdnQueryString]" />
+                            <input type="hidden" name="hdnNumberOfPages" id="hdnNumberOfPages" value="[hdnNumberOfPages]" />                           
+                            <div class="clear"></div>
+                        </div>
+                        <!--END: catFilterMainBlock_enhanced-->                        
+
+					</form>
 
 					<!--START: CATEGORY_ITEMS-->
 					<div class="product-items product-items-[product-cols-number]">
 						<!--START: ITEM_TEMPLATE_0-->
 						[product_items]
 						<!--END: ITEM_TEMPLATE_0-->
+
+						<!--START: ITEM_TEMPLATE_1-->
+						<div class="product-item product-item-liststyle" data-catalogid="[catalogid]" data-ajaxcart="1" data-addcart-callback="addcart_callback">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="name">
+										<a href="product.asp?itemid=[catalogid]">[name]</a>
+									</div>
+								</div>
+								<div class="col-sm-8">
+									<div class="price">
+										<!--START: ITEMPRICE-->
+										<span class="regular-price">[ITEMPRICE]</span>
+										<!--END: ITEMPRICE-->
+										<!--START: SALEPRICE-->
+										<del class="regular-price">[ITEMPRICE]</del>
+										<span class="sale-price">[ITEMSALEPRICE]</span>
+										<span class="on-sale-badge">[product_sale]</span>
+										<!--END: SALEPRICE-->
+									</div>
+
+									<!--START: addtocart-->
+									<div class="action">
+										<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]" class="add-to-cart btn btn-default">
+											<span class="buyitlink-text">[category_buyitlink]</span>
+											<span class="ajaxcart-loader icon-spin2 animate-spin"></span>
+											<span class="ajaxcart-added icon-ok"></span>
+										</a>
+									</div>
+									<!--END: addtocart-->
+								</div>
+							</div>
+						</div>
+						<!--END: ITEM_TEMPLATE_1-->
+
+						<!--START: ITEM_TEMPLATE_2-->
+						<div class="product-item product-item-thumbstyle" data-catalogid="[catalogid]" data-ajaxcart="1" data-addcart-callback="addcart_callback">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="img">
+										<a href="product.asp?itemid=[catalogid]">
+											<img src="[THUMBNAIL]" alt="[name]" class="img-responsive" />
+										</a>
+										<!--START: quickview-->
+										<button class="quickview" data-toggle="modal">[product_quick-view]</button>
+										<!--END: quickview-->
+									</div>
+								</div>
+								<div class="col-sm-8">
+									<div class="name">
+										<a href="product.asp?itemid=[catalogid]">[name]</a>
+									</div>
+									<div class="price">
+										<!--START: ITEMPRICE-->
+										<span class="regular-price">[ITEMPRICE]</span>
+										<!--END: ITEMPRICE-->
+										<!--START: SALEPRICE-->
+										<del class="regular-price">[ITEMPRICE]</del>
+										<span class="sale-price">[ITEMSALEPRICE]</span>
+										<span class="on-sale-badge">[product_sale]</span>
+										<!--END: SALEPRICE-->
+									</div>
+
+									<!--START: addtocart-->
+									<div class="action">
+										<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]" class="add-to-cart btn btn-default">
+											<span class="buyitlink-text">[category_buyitlink]</span>
+											<span class="ajaxcart-loader icon-spin2 animate-spin"></span>
+											<span class="ajaxcart-added icon-ok"></span>
+										</a>
+									</div>
+									<!--END: addtocart-->
+								</div>
+							</div>
+						</div>
+						<!--END: ITEM_TEMPLATE_2-->
+
+
 					</div>
 					<!--END: CATEGORY_ITEMS-->
 
 					<div class="bottom_breadcrumb">
-					<div class="paging"> 
-						<!--START: PAGING--> 
-						<!--START: PREV--> 
-						<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[prev]">[category_previouspage]</a> 
-						<!--END: PREV--> 
-						<!--START: PAGES--> 
-						<!--START: FIRST_PAGE--> 
-						<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a><span class="paging-dots">...</span> 
-						<!--END: FIRST_PAGE--> 
-						<!--START: PAGES_SELECTED--> 
-						<strong>PAGE</strong> 
-						<!--END: PAGES_SELECTED--> 
-						<!--START: PAGES_NOTSELECTED--> 
-						<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
-						<!--END: PAGES_NOTSELECTED--> 
-						<!--START: LAST_PAGE--> 
-						<span class="paging-dots">...</span><a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
-						<!--END: LAST_PAGE--> 
-						<!--END: PAGES--> 
-						<!--START: NEXT--> 
-						<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[next]">[category_nextpage]</a> <a href="view_category.asp?viewall=1&cat=[catid]" class="category-viewall">View All</a> 
-						<!--END: NEXT--> 
-						<!--END: PAGING--> 
-						<!--START: UNDOVIEWALL--> 
-						<a class="paging-links" href="view_category.asp?viewall=0&cat=[catid]">Exit View All</a> 
-						<!--END: UNDOVIEWALL--></div>
+						<div class="paging"> 
+							<!--START: PAGING--> 
+							<!--START: PREV--> 
+							<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[prev]">[category_previouspage]</a> 
+							<!--END: PREV--> 
+							<!--START: PAGES--> 
+							<!--START: FIRST_PAGE--> 
+							<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a><span class="paging-dots">...</span> 
+							<!--END: FIRST_PAGE--> 
+							<!--START: PAGES_SELECTED--> 
+							<strong>PAGE</strong> 
+							<!--END: PAGES_SELECTED--> 
+							<!--START: PAGES_NOTSELECTED--> 
+							<a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
+							<!--END: PAGES_NOTSELECTED--> 
+							<!--START: LAST_PAGE--> 
+							<span class="paging-dots">...</span><a class="paging-links" href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=PAGE">PAGE</a> 
+							<!--END: LAST_PAGE--> 
+							<!--END: PAGES--> 
+							<!--START: NEXT--> 
+							<a href="view_category.asp?cat=[cat]&amp;sortby=[sortby]&amp;page=[next]">[category_nextpage]</a> <a href="view_category.asp?viewall=1&cat=[catid]" class="category-viewall">View All</a> 
+							<!--END: NEXT--> 
+							<!--END: PAGING--> 
+							<!--START: UNDOVIEWALL--> 
+							<a class="paging-links" href="view_category.asp?viewall=0&cat=[catid]">Exit View All</a> 
+							<!--END: UNDOVIEWALL--></div>
 					</div>
 				</section>
 				<!--END: ITEMS-->
